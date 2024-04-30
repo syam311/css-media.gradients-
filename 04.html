@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #back{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+          animation: wave 1s  alternate-reverse infinite;
+            
+
+        /* }
+        #back:hover{ */
+           
+            background-image: repeating-radial-gradient(blue,white 10%,blue 15%);
+
+        }
+       @keyframes wave {
+         0%{  background-image: repeating-radial-gradient(blue,white ,blue ); } */
+        25%{  background-image: repeating-radial-gradient(blue,white 7%,blue 10%);}
+        50%{  background-image: repeating-radial-gradient(blue,white 10%,blue 25%);}
+        75%{  background-image: repeating-radial-gradient(blue,white 15%,blue 20%);}
+        100%{  background-image: repeating-radial-gradient(blue,white 20%,blue 20%);}
+        }    
+      
+    </style>
+</head>
+<body>
+    <div id="back">
+        <div id="ground"></div>
+    </div>
+</body>
+</html>
